@@ -1,0 +1,17 @@
+namespace: "RedHatGov"
+name: "redhatgov.roles"
+version: "0.0.1"
+readme: "README.md"
+authors:
+    - "Alexander Jacocks <alexander@redhat.com>"
+#dependencies:
+#    "anderson55.my_collection": "*"    # note: "*" selects the highest version available
+license:
+    - "GPLv3"
+tags:
+    - RedHatGov
+    - RedHat
+    - NAPS
+    - ansible
+    - roles
+repository: "https://github.com/RedHatGov/roles"

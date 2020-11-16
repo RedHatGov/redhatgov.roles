@@ -1,0 +1,34 @@
+---
+# tasks file for upgrade
+- name: Upgrade packages and reboot
+  block:
+  - name: Upgrade all packages to latest
+    package: 
+      name: "*"
+      state: latest
+    async: 10800
+    poll: 0
+    register: package_update_status
+  
+  - name: 'Check on Package Updates ...'
+    async_status: jid={{ package_update_status.ansible_job_id }}
+    register: job_result
+    until: job_result.finished
+    delay: 30
+    retries: 180
+
+  - name: Rebooting to apply kernel updates (>=2.7)
+    reboot:
+    when: ansible_version.full >= "2.7" and job_result is changed
+
+  - name: Rebooting to apply kernel updates (<2.7)
+    shell: /sbin/shutdown -r +1
+    when: ansible_version.full < "2.7" and job_result is changed
+
+  - name: Wait for system to become reachable again
+    wait_for_connection:
+      timeout: 900
+      delay: 120
+      sleep: 5
+#    when: upgrade == 1
+    when: ansible_version.full < "2.7" and job_result is changed
