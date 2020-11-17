@@ -1,5 +1,5 @@
 namespace: "RedHatGov"
-name: "roles"
+name: "RHGroles"
 version: "0.0.1"
 readme: "README.md"
 authors:
@@ -13,5 +13,6 @@ tags:
     - RedHat
     - NAPS
     - ansible
+    - RHGroles
     - roles
 repository: "https://github.com/RedHatGov/redhatgov.roles"
