@@ -14,4 +14,4 @@ tags:
     - NAPS
     - ansible
     - roles
-repository: "https://github.com/RedHatGov/roles"
+repository: "https://github.com/RedHatGov/redhatgov.roles"
