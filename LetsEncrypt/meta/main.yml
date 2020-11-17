@@ -1,19 +1,18 @@
-# file: roles/LetsEncrypt/meta/main.yml
----
 galaxy_info:
-  author: John Doe
-  description: Quick and easy acme web installer.
-  company: Acme
-  license: MIT
-  min_ansible_version: 1.9
+  author: Alexander Jacocks
+  description: LetsEncrypt role
+  issue_tracker_url: https://github.com/RedHatGov/redhatgov.roles/issues
+  license: GPL
+  min_ansible_version: 2.4
+  github_branch: master
   platforms:
   - name: EL
     versions:
-    - all
+    - 7
+    - 8
+
   galaxy_tags:
-    - acme
-    - installer
-    - web
-dependencies:
-  # - { role: username.common, some_parameter: 3 }
-  # - { role: username.iptables, open_port: 80 }
+  - LetsEncrypt
+
+dependencies: []
+

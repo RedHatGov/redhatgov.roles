@@ -2,9 +2,9 @@
 ---
 galaxy_info:
   author: Alexander Jacocks
-  description: Quick and easy wetty installer.
+  description: System user management
   company: Red Hat
-  license: MIT
+  license: GPLv3
   min_ansible_version: 2.3
   platforms:
   - name: EL

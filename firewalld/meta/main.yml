@@ -1,18 +1,18 @@
 galaxy_info:
-  author: Mark Milstein
-  description: epel role
-  issue_tracker_url: https://github.com/epiloque/ansible-epel/issues
-  license: Apache-2.0
+  author: Alexander Jacocks
+  description: firewalld role
+  issue_tracker_url: https://github.com/RedHatGov/redhatgov.roles/issues
+  license: GPL
   min_ansible_version: 2.4
   github_branch: master
   platforms:
   - name: EL
     versions:
     - 7
+    - 8
 
   galaxy_tags:
-  - epiloque
-  - epel
+  - firewalld
 
 dependencies: []
 

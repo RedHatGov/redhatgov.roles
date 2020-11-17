@@ -1,6 +1,6 @@
 galaxy_info:
   author: Alexander Jacocks
-  description: vscode role
+  description: upgrade role
   issue_tracker_url: https://github.com/RedHatGov/redhatgov.roles/issues
   license: GPL
   min_ansible_version: 2.4
@@ -12,7 +12,7 @@ galaxy_info:
     - 8
 
   galaxy_tags:
-  - vscode
+  - upgrade
 
 dependencies: []
 
