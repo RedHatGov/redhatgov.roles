@@ -1,5 +1,5 @@
 namespace: "RedHatGov"
-name: "redhatgov.roles"
+name: "roles"
 version: "0.0.1"
 readme: "README.md"
 authors:
